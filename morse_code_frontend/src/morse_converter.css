@@ -1,0 +1,178 @@
+body.morse-body {
+  margin: 0;
+  background-color: #fff;
+  font-family: 'Segoe UI', 'Roboto', Arial, Helvetica, sans-serif;
+}
+.morse-bg {
+  min-height: 100vh;
+  width: 100vw;
+  background: #fff;
+  box-sizing: border-box;
+  overflow-x: hidden;
+}
+.branding-row {
+  width: 100%;
+  height: 48px;
+  display: flex;
+  align-items: start;
+  justify-content: flex-start;
+  margin: 2% 0 3% 2%;
+}
+.logo-banner {
+  width: 430px;
+  height: 30px;
+  object-fit: contain;
+  margin-top: 0.4rem;
+  margin-bottom: 2rem;
+}
+
+.converter-wrapper {
+  display: flex;
+  width: 100vw;
+  max-width: 1920px;
+  margin: 0 auto;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: stretch;
+  padding: 2vw 3vw;
+  box-sizing: border-box;
+}
+.col-side {
+  width: 20vw;
+  min-width: 300px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 22px;
+}
+.col-side.col-left {
+  align-items: flex-end;
+  gap: 30px;
+}
+.col-side.col-right {
+  gap: 18px;
+  align-items: flex-start;
+}
+.col-label {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-bottom: 1.5rem;
+  margin-right: 1rem;
+}
+.col-input {
+  font-size: 1.2rem;
+  width: 20vw;
+  max-width: 350px;
+  min-width: 220px;
+  padding: 9px 12px;
+  margin-bottom: 2rem;
+  margin-top: 0.7rem;
+  border-radius: 10px;
+  border: 1px solid #cccccc;
+  background: #fafafa;
+  color: #444;
+}
+.slider-block {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 18px;
+  margin: 8px 0;
+}
+.slider-block label {
+  min-width: 65px;
+  font-size: 1rem;
+  color: #333;
+  text-align: right;
+  margin-right: 4px;
+}
+.slider {
+  margin: 0 7px;
+  flex: 1;
+}
+.slider-value {
+  min-width: 32px;
+  font-size: 1.1rem;
+  color: #aaa;
+}
+
+.col-center {
+  flex-grow: 1;
+  min-width: 280px;
+  max-width: 700px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.output-bg {
+  background: #fff;
+  border: 2px solid #000;
+  border-radius: 30px;
+  width: 100%;
+  min-height: 280px;
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: 2.4rem 2.4rem 2.2rem 2.4rem;
+  box-shadow: 0 3px 24px rgba(0,0,0,0.03);
+}
+.output-label {
+  font-size: 1.5rem;
+  color: #222;
+  font-weight: bold;
+  margin-bottom: 1.35rem;
+  margin-top: 0.2rem;
+}
+.output-box {
+  font-size: 1.15rem;
+  color: #757575;
+  background: #fafafc;
+  border-radius: 15px;
+  border: 1px solid #dfdfdf;
+  width: 88%;
+  min-height: 42px;
+  padding: 1.5rem 1.2rem;
+  margin-top: 0.6rem;
+}
+.output-placeholder {
+  font-style: italic;
+  color: #b1b1b1;
+}
+
+.action-btn {
+  margin: 0.27em 0.1em;
+  padding: 6px 18px;
+  border: 1.5px solid #000;
+  border-radius: 24px;
+  background: #fff;
+  color: #222;
+  font-size: 1.25rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: box-shadow 0.16s, color 0.13s;
+}
+.action-btn:hover {
+  box-shadow: 0 2px 8px #ffc10744;
+  color: #1976d2;
+}
+
+/* Utility: mimicking custom Figma visuals */
+.polygon, .vertical-bars, .square-btn {
+  margin: 0.22rem 0.11rem;
+  display: block;
+  width: 40px;
+  height: 40px;
+  object-fit: contain;
+  filter: drop-shadow(0px 2px 10px #eee);
+}
+
+@media screen and (max-width: 900px) {
+  .converter-wrapper { flex-direction: column; }
+  .col-side, .col-center { width: 98vw; }
+  .logo-banner { width: 80vw; }
+}
